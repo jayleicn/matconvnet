@@ -134,6 +134,9 @@ for l = 1:numel(net.layers)
     case {'sigmoid'}
       block = Sigmoid() ;
 
+    case {'sigmoid_ext'}
+      block = Sigmoid_ext() ;
+
     case {'softmax'}
       block = SoftMax() ;
 
